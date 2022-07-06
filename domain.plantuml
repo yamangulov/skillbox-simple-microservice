@@ -13,13 +13,13 @@ class Profile {
   +birth_date: date
   +avatar_link: varchar
   +information: text
-  +city_id: uuid
+  +city_id: integer
   +contact_id: uuid
-  +sex_id: uuid
+  +sex_id: integer
 }
 
 class Sex {
-  +ID: uuid
+  +ID: integer
   +name: varchar
 }
 
@@ -30,19 +30,19 @@ class Contact {
 }
 
 class Skill {
-  +ID: uuid
+  +ID: integer
   +name: varchar
 }
 
 class City {
-  +ID: uuid
+  +ID: integer
   +name: varchar
 }
 
 class Hard_skills {
   +ID: uuid
   +user_id: uuid
-  +skill_id: uuid
+  +skill_id: integer
 }
 
 class Subscription {
