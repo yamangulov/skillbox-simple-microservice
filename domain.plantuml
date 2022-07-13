@@ -15,10 +15,10 @@ class Profile {
   +information: text
   +city_id: integer
   +contact_id: uuid
-  +sex_id: integer
+  +gender_id: integer
 }
 
-class Sex {
+class Gender {
   +ID: integer
   +name: varchar
 }
@@ -57,7 +57,7 @@ Profile "1" o-- "1" City
 
 Profile "1" o-- "1" Contact
 
-Profile "1" o-- "1" Sex
+Profile "1" o-- "1" Gender
 
 User "0..*" - "0..*" Skill
 (User, Skill) -- Hard_skills
